@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Mountains of Christmas', serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.container {
+    margin-top: 1em;
+    width: 40%;
+}
+
+#cim {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    /* left: 1em; */
+    /* position: absolute; */
+}
+
+.cl-3 {
+    border: 3px solid #492156;
+    cursor: pointer;
+    color: white;
+    font-size: 3em;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl-4 {
+    border: 3px solid #492156;
+    cursor: pointer;
+    color: white;
+    font-size: 3em;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl-3:nth-child(1) {
+    background-image: url('./ho.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.cl-3:nth-child(2) {
+    background-image: url('./gyertya.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.cl-3:nth-child(3) {
+    background-image: url('./fenyo.gif');
+    background-position: right;
+    background-size: cover;
+}
+
+.cl-3:nth-child(4) {
+    background-image: url('./hoember.webp');
+    background-position: top;
+    background-size: cover;
+}
+
+.cl-4:nth-child(1) {
+    background-image: url('./top.gif');
+    background-position: top;
+    background-size: cover;
+}
+
+.cl-4:nth-child(2) {
+    background-image: url('./ho2.gif');
+    background-position: top;
+    background-size: cover;
+}
+
+.cl-4:nth-child(3) {
+    background-image: url('./karifa.webp');
+    background-position: top;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+    /* list-style-image: url('./cloud.png'); */
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.modal-title {
+    color: #492156;
+}
+
+.modal-dialog {
+    color: whitesmoke;
+}
+
+.modal-kep {
+    margin-bottom: 1em;
+}
+
+.modal-body {
+    background-color: #492156;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: cover;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .container {
+        margin-bottom: 1em;
+        width: 60%;
+    }
+
+    #cim {
+        /* position: relative; */
+        font-size: 1.5em;
+    }
+
+    .fiok {
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url('./bg2.gif');
+        background-size: contain;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .container {
+        margin-bottom: 1em;
+        padding-bottom: 5px;
+        width: 90%;
+    }
+
+    #cim {
+        position: relative;
+    }
+
+    .fiok {
+        height: 160px;
+    }
+
+    iframe {
+        width: 305px !important;
+    }
+}
