@@ -6,22 +6,30 @@
 }
 
 body {
-    background-image: url('./bg.jpg');
+    /* background-image: url('./bg.jpg');
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: #fff;
+    /* background-color: #492156; */
     font-family: 'Mountains of Christmas', serif;
     font-weight: bolder;
     font-style: normal;
 }
 
 .container {
-    margin-top: 1em;
+    background-color: #fff;
+    /* margin-top: 1em; */
+    padding-bottom: 1em;
+    padding-top: 1em;
+    /* padding-left: 5em;
+    padding-right: 5em; */
+    height: 100vh;
     width: 40%;
 }
 
 #cim {
-    color: white;
+    color: #492156;
     font-size: 2em;
     text-align: center;
     /* left: 1em; */
@@ -103,7 +111,7 @@ h2 {
 
     .container {
         margin-bottom: 1em;
-        width: 55%;
+        width: 50%;
     }
 
     #cim {
@@ -121,6 +129,7 @@ h2 {
         background-size: cover;
         height: 100vh;
         background-attachment: fixed;
+        background-color: #fff;
     }
 
     .container {
@@ -143,6 +152,8 @@ h2 {
         background-size: cover;
         height: 100vh;
         background-attachment: fixed;
+        background-color: #fff;
+        padding-bottom: 1em;
     }
 
     .container {
@@ -162,7 +173,8 @@ h2 {
 
 @media screen and (max-width: 750px) {
     body {
-        background-image: url('./bg2.gif');
+        /* background-image: url('./bg2.gif'); */
+        background-color: #fff;
         background-size: contain;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -170,7 +182,7 @@ h2 {
 
     .container {
         margin-bottom: 1em;
-        padding-bottom: 5px;
+        padding-bottom: 1em;
         width: 90%;
     }
     .sor {
