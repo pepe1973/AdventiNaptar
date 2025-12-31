@@ -1638,18 +1638,18 @@
             let closeButtons = document.querySelectorAll('.btn-close');
 
             for (let i = 0; i < fiokok.length; i++) {
+                fiokok[i].setAttribute('data-bs-toggle', 'modal');
+                fiokok[i].setAttribute(
+                    'data-bs-target',
+                    `#myModal_${i + 1}`
+                );
+                fiokok[i].addEventListener('click', () => {
+                    videok[i].play();
+                });
+                closeButtons[i].addEventListener('click', () => {
+                    videok[i].pause();
+                });
                 if (i <= dayOfYear(new Date()) - 334) {
-                    fiokok[i].setAttribute('data-bs-toggle', 'modal');
-                    fiokok[i].setAttribute(
-                        'data-bs-target',
-                        `#myModal_${i + 1}`
-                    );
-                    fiokok[i].addEventListener('click', () => {
-                        videok[i].play();
-                    });
-                    closeButtons[i].addEventListener('click', () => {
-                        videok[i].pause();
-                    });
                 }
             }
         </script>
